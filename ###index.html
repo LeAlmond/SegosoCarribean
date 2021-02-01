@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <title>Segoso</title>
+</head>
+<body>
+  <a href="beforeHome.html"><main>
+    <div id="progress"></div>
+    <div id="gallery">
+      <object type="image/svg+xml" id="change" data="#" class="middle"></object>
+    </div>
+  </main></a>
+
+
+  <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
+  <script>
+    
+    let progress = document.getElementById('progress');
+    let gallery = document.getElementById('gallery');
+
+    var queue = new createjs.LoadQueue(false);
+
+    queue.on("progress", event => {
+      let progress = Math.floor(event.progress * 40);
+      this.progress.style.width = progress +'%';
+        if (progress == 100){
+          console.log('Complete');
+          document.querySelector('body').style.background = 'white';
+      }
+    });
+
+    function contentOne(){
+        // native
+        var element =  document.getElementById("change");
+        element.setAttribute("data", "/images/SEGOSO_logo.svg");
+    }
+    queue.on("complete", event => {
+      setTimeout(() => {
+        gallery.classList.add('fadeIn');
+      }, 0);
+
+      setTimeout(() => {
+        contentOne();
+      }, 2100);
+
+      setTimeout(() => {
+        progress.classList.add('fadeOut');
+      }, 300) //delays how long it'll take for the next thing to show
+    });
+
+    queue.on("fileload", handleFileComplete);
+    //queue.loadFile('/images/SEGOSO_logo.svg')
+    queue.loadFile('https://www.jcdt.org.jm/bjcmnp/images/images-editorials/about_the_national_park-main.jpg')
+
+    function handleFileComplete(event){
+        var item = event.item;
+        var type = item.type;
+
+        if(type == createjs.Types.IMAGE){
+          gallery.appendChild(event.result);
+        }
+    }
+  </script>
+</body>
+</html>
