@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Where We Are</title>
+</head>
+<body style="box-sizing: border-box;width: 100%; height: 100%; background-color: white;overflow-wrap: break-word;">
+    <div class="wherePage">
+        <svg id="morph" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+            <path class="morph" id="Path_8" data-name="Path 8" d="M-4033-5921v955.131s36.074-134.928,176.994-97.168,217.173-147.747,317.4-147.747c242.1,0,120.619-113.814,233.655-154.832,73.159,0,174.537-5.63,239.285-28.151,104.159-50.672,97.8-198.268,219.147-198.268s194.243-22.521,239.285-121.05c59.118-129.5,114.275-85.854,200.249-63.788,100.55,38.391,162.646,13.749,208.212-16.331,64.827-45.815,85.821-127.922,85.821-127.922Z" transform="translate(4033 5921)" fill="#1198d5"/>
+          </svg>   
+        </div>       
+        <div id="topMenu">
+            <ul id="menu-left">
+                <li><a href="#" onclick="openMenu()"><img src="images/icons/menu.png" style="width: 5%;margin: 0" /></a></li>
+            </ul>
+            <a href="homepage.html" id="logoMenu"><img src="images/SEGOSO_logo_white.png" /></a>
+            <ul id="menu-right">
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <nav class="animeNav" id="menu">
+            <ul>
+                <li><img src="images/icons/close.png" alt="close icon" class="close-icon" onclick="closeMenu()"></li>
+                <li class="tooltip"><a href="#">WHO WE ARE</a><span class="tooltiptext">Coming Soon</span></li>
+                <li><a href="whereWeAre.html">WHERE WE ARE</a></li>
+                <li class="tooltip"><a href="#">WORK STYLE</a><span class="tooltiptext">Coming Soon</span></li>
+                <li><a href="#" class="tooltip">OUR TEAM<span class="tooltiptext">Coming Soon</span></a></li>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+            </ul>
+            <p class="lite-text">MENU</p>
+        </nav>
+        <button style="border: 0;background-color: transparent;display: block;margin-left: auto;margin-right: auto;" id="next"><img src="images/icons/left-click-black.png" style="opacity: 0.8" class="fixedBtn float" id="nextImg"/></button>
+        <div>
+            <!-- 1st Section -->
+            <div class="container" id="sect-1">
+                <div style="width: 45%;margin-top: 2%; margin-bottom: 2%">
+                    <img src="images/customer-worker.png" alt="man talking to a woman" style="width: 100%"/>
+                </div>
+                <div style="margin-left: 16%; margin-top: 12%">
+                    <h2 style="color: #1198D5;font-weight: bold;text-align: center; line-height: 1.3em;">Nearshore<br>Outsourcing at its<br>Best</h2>
+                    <p style="text-align: center; font-size: 30px;color: #000">Segoso Caribbean is a subsidiary of<br>Atlanta-based  Sequium Asset Solutions LLC</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd Section 
+    <div class="container" id="sect-2">
+        <div style="margin-left: 2%">
+            <h2 style="color: #fff">Lorem ipsum dolor sit amet.</h2>
+            <p style="font-size: 60px; line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ipsum enim, commodo in sapien eget.</p>
+        </div>
+        <div style="width: 45%;margin-top: 2%;display: fle;">
+        </div>
+    </div>-->
+    
+    <div class="container" id="sect-2" style="justify-content: center;margin-top: 3%;height: 100vh">
+        <div style="margin-top: 3% 0 0 2%; display: flex;justify-content: center;flex-direction: column;">
+            <h2 style="color: #fff;align-items: baseline;">Lorem ipsum dolor sit amet.</h2>
+            <p style="font-size: 30px; line-height: normal;">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Aenean ipsum enim,<br>commodo in sapien eget.</p>
+        </div>
+        <div style="width: 45%;margin-top: 2%">
+            <img src="images/women-on-the-phone.png" alt="women on the phone"  class="image1"/>
+            <img src="images/workers-using-the-pc.png" alt="employees at work"  class="image2" style="width:30%"/>
+        </div>
+    </div>
+
+    <div class="container" id="sect-3" style="margin-top: 3%;background-color: #0D2A46;height: 100vh">
+        <div style="width: 45%;margin-left: 4%;">
+            <img src="images/map.png" alt="map with a pointer on Jamaica" width="100%"/>
+        </div>
+        <div style="margin-left:12%; margin-bottom: 5%; display: flex;justify-content: center;flex-direction: column;">
+            <h1 style="color: #fff;">Our Location</h1>
+            <h2 style="color:#92D050; margin:0">Jamaica</h2>
+            <p style="font-size: 30px; line-height: normal;margin: 0;">5 Southern Cross Boulevard,<br>Montego Bay, Freeport,<br>Jamaica</p>
+        </div>
+    </div>
+
+    <div class="container" id="sect-4" style="margin-top: 3%;background-color: #fff;height: 100vh">
+        <div style="width: 45%;margin-left: 4%;">
+            <img src="images/map.png" alt="map with a pointer on Jamaica" width="100%"/>
+        </div>
+        <div style="margin-left:12%; margin-bottom: 5%; display: flex;justify-content: center;flex-direction: column;">
+            <h1>Our Co-locations</h1>
+            <h2 style="color:#FFCC66; margin:0">Altanta, GA</h2>
+            <p style="font-size: 30px; line-height: normal;margin: 0;color:#000">1130 Northchase Pkwy Suite 150<br>Marietta<br>GA  30067<br>United States</p>
+            <br>
+            <h2 style="color:#92D050; margin:0">Tampa, FL</h2>
+            <p style="font-size: 30px; line-height: normal;margin: 0;color:#000">1234 Lorem ipsum dolor sit<br>Sapien eget<br>FL<br>United States</p>
+        </div>
+    </div>
+
+    <script>
+        var overlay = document.getElementById('morph');
+        var sect2 = document.getElementById('sect-2');
+        var morphing = anime({
+            targets: '.morph',
+            d: [
+                { value: 'M-4033-5921v1119.535s222.3-56.058,363.219-18.3,264.6-21.958,364.832-21.958c242.1,0,221.125,41.017,334.162,0,73.159,0,224.365,44.479,289.113,21.958,104.159-50.672,156.79,0,278.134,0s273.348,58.273,318.39-40.256c59.117-129.5-54.666-550.406,0-574.566,36.373-16.075-9.636-242.952,0-281.793,6.263-25.245-27.706-204.917-27.706-204.917Z'}
+            ],
+            easing: 'easeInQuint',
+            duration: 900,
+            loop: false,
+            autoplay: false
+        })
+
+        $(".container").scroll(function() {
+            $('html,body').animate({ scrollTop:$(this).parent().next().offset().top}, 'slow');});
+
+        $("#next").click(function() {
+            morphing.restart();
+            overlay.classList.add('pointer');
+            $("#sect-1").css("opacity", "0%");
+            setTimeout(
+            function() 
+            {
+                $('#sect-1').hide();
+            }, 1400);
+            setTimeout(
+                function() 
+                {
+                    $("body").css("background-color", "#1198D5");
+                    $("#sect-2").css("opacity", "100%");
+                }, 1400);
+        });
+
+        var menu = document.getElementById("menu");
+
+        function closeMenu(){
+            menu.style.top = "-100vh";
+        }
+
+        function openMenu(){
+            menu.style.top = "0";
+        }
+    </script>
+</body>
+</html>

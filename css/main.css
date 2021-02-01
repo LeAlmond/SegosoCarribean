@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background:  rgb(13,42, 70);;
+  transition: background-color 1s ease;
+}
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.enterPage{
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  width: 100%;
+}
+.middle{
+  position:absolute;
+  top: 0;
+  bottom:0;
+  right: 0;
+  left: 0;
+  margin: auto; 
+  max-width: 20%;
+  max-height: 10%;
+  height: auto;
+  width: auto;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+h1,h2,h3{
+  font-family: 'Oswald', sans-serif;
+}
+
+h1{
+  font-size: 70px;
+}
+
+h2{
+  font-size: 60px;
+}
+
+h3{
+  font-size: 40px;
+}
+.quotes{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.float {
+	width: 150px;
+  height: 150px;
+  position: absolute;
+	box-sizing: border-box;
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+  bottom: 0;
+  left: 44%
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.fade{
+  opacity: 0;
+}
+
+#textToChange{
+  transition: opacity 1s ease;
+}
+
+.firstEncounter{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1366' height='768' preserveAspectRatio='none' viewBox='0 0 1366 768'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1179%26quot%3b)' fill='none'%3e%3crect width='1366' height='768' x='0' y='0' fill='rgba(27%2c 172%2c 238%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c337 C 91.2%2c285.8 273.6%2c75.8 456%2c81 C 638.4%2c86.2 730%2c369 912%2c363 C 1094%2c357 1275.2%2c113.4 1366%2c51L1366 768L0 768z' fill='rgba(5%2c 99%2c 141%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c673 C 136.6%2c643.4 409.8%2c534.8 683%2c525 C 956.2%2c515.2 1229.4%2c604.2 1366%2c624L1366 768L0 768z' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1179'%3e%3crect width='1366' height='768' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+.navBar{
+  display: flex;
+  width:100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-left: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  z-index: 2;
+}
+
+#morph{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#sect-1{
+  opacity: 100%;
+  transition: opacity 1s ease;
+}
+
+#sect-2{
+  opacity: 0%;
+  transition: opacity 1s ease;
+}
+
+.sect-2{
+  opacity: 0%;
+  transition: opacity 1s ease;
+}
+
+.pointer{
+  pointer-events : auto !important;
+}
+
+
+.inTouch{
+  background-image: linear-gradient(to right bottom, #1198d5, #1295d7, #1891d9, #228eda, #2c8adb, #3084d9, #367fd7, #3c79d5, #3f70d0, #4467ca, #495dc3, #4e53bc);
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.card{
+  background-color: white;
+  border-radius: 3em;
+  display: flex;
+  padding: 2% 2% 2% 2%;
+  margin-left: 2%;
+  justify-content: center flex-start;
+  flex-direction: column;
+  color: #2c2c2c;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card > p{
+  font-size: 20px;
+  color: #2c2c2c;
+}
+
+.card > h3{
+  color: #2c2c2c;
+}
+button{
+  border: none;
+  border-radius: 20px;
+}
+
+.placeholder{
+  background-image: linear-gradient(to bottom, #ffffff, #efeff9, #dee0f4, #cad1f0, #b4c3eb, #a6bae8, #98b1e4, #89a9e1, #81a3de, #799ddc, #7197d9, #6991d6);
+  height: 15em;
+  width: 100%;
+  margin-top: 30%;
+  overflow: auto;
+  text-align: right;
+  padding: 0;
+}
+
+.placeholderLeft{
+  width: 100%;
+  padding: 0;
+  background-color: #6991D6;
+  padding-left: 1%;
+}
+
+textarea{
+  resize: none;
+  color: white;
+}
+
+input{
+  color: white;
+}
+.animeNav{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  z-index: 2;
+  top: -100vh;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.animeNav ul li{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 35px 0;
+  letter-spacing: 5px;
+}
+
+.animeNav ul li a{
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.animeNav ul li a::after{
+  content: '';
+  height: 3px;
+  width:0;
+  background: #eea16d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.animeNav ul li a:hover::after{
+  width: 100%;
+}
+
+.lite-text{
+  color: rgb(150, 150, 150);
+  font-size: 300px;
+  letter-spacing: 100px;
+  opacity: 0.1;
+  position: absolute;
+  left: 52%;
+  top: 28%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  z-index: -1;
+}
+ 
+.close-icon{
+  width: 20%;
+  cursor: pointer;
+  z-index: 2;
+}
+#topMenu {
+	width: 100%;
+	line-height: 25px;
+	margin: 0 auto;
+    position: relative;
+}
+
+#topMenu ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box; /* percentage width + padding */
+    width: 45%;
+    position: absolute;
+    top: 0;
+}
+
+
+#topMenu #menu-left {
+    left: 0;
+}
+#topMenu #menu-right {
+    right: 0;
+}
+
+#topMenu li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+#topMenu a {
+	color: white;
+	text-decoration: none;
+}
+
+#logoMenu {
+    display: block;
+    width: 20%;
+    margin: 0 auto; /*center*/
+}
+
+#topMenu img {
+    margin: 0 auto;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.centerFlex{
+  display: flex;
+  margin: 0;
+  padding:0;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  box-shadow: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixedBtn{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+  color:#FFF;
+  z-index: 1;
+	text-align:center;
+}
+
+button{
+  cursor:pointer;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width:45%;
+  margin-left: 10%;
+}
+.image2 {
+  position: absolute;
+  top: 295px;
+  left: 1100px;
+  
+}
+
+.tooltip .tooltiptext {
+  top: -5px;
+  left: 105%;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 12px;
+  border-radius: 6px;
+  font-family: 'Roboto',sans-serif;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
