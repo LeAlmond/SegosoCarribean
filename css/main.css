@@ -408,3 +408,57 @@ button{
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+#map:before
+{
+    content: '';
+    border: 1px solid black;
+    display: block;
+    width: 100%;
+}
+
+#map {
+  width: 848px;
+  height: 848px;
+  border-radius: 50%;
+  border: 10px #0F0F0F;
+  border-style: double;
+}
+
+.marker {
+  background-image: url('map-marker.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+
+/* change background and tip color to green */
+.apple-popup .mapboxgl-popup-content {
+  background-color: #0D2A46;
+  border-radius: 50%;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  padding: 5% 10% 10% 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.apple-popup .mapboxgl-popup-close-button{
+  display: none;
+}
+
+.apple-popup .mapboxgl-popup-content > h3{
+  font-size: 40px;
+  color: #FFCC66;
+}
+
+.apple-popup .mapboxgl-popup-content > p{
+  font-size: 20px;
+  line-height: 1;
+  margin: 0;
+}
